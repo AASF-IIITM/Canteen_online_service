@@ -17,7 +17,7 @@ urlpatterns = [
 
     path('menu/Beverages/', views.BeveragesView.as_view(), name='Beverages'),
 
-    path('menu/Thali/', views.ThaliView.as_view(), name='Thali'),
+    path('menu/Plate/', views.PlateView.as_view(), name='Plate'),
 
     path('menu/Snacks/', views.SnacksView.as_view(), name='Snacks'),
 

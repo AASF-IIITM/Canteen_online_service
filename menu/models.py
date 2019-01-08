@@ -11,25 +11,25 @@ class Menu(models.Model):
 
 class Vegetable(models.Model):
     vegetable = models.CharField(max_length=50)
-    vegetable_image = models.FileField()
+    vegetable_image = models.ImageField()
     vegetable_amt = models.FloatField(default=0)
 
     def __str__(self):
         return '{}{}'.format(self.vegetable, self.vegetable_amt)
 
 
-class Thali(models.Model):
-    thali = models.CharField(max_length=50)
-    thali_image = models.FileField()
-    thali_amt = models.FloatField(default=0)
+class Plate(models.Model):
+    plate = models.CharField(max_length=50)
+    plate_image = models.ImageField()
+    plate_amt = models.FloatField(default=0)
 
     def __str__(self):
-        return '{}{}'.format(self.thali, self.thali_amt)
+        return '{}{}'.format(self.plate, self.plate_amt)
 
 
 class Breads(models.Model):
     breads = models.CharField(max_length=50)
-    breads_image = models.FileField()
+    breads_image = models.ImageField()
     breads_amt = models.FloatField(default=0)
 
     def __str__(self):
@@ -38,7 +38,7 @@ class Breads(models.Model):
 
 class Snacks(models.Model):
     snacks = models.CharField(max_length=50)
-    snacks_image = models.FileField()
+    snacks_image = models.ImageField()
     snacks_amt = models.FloatField(default=0)
 
     def __str__(self):
@@ -47,7 +47,7 @@ class Snacks(models.Model):
 
 class StreetFood(models.Model):
     streetfood = models.CharField(max_length=50)
-    streetfood_image = models.FileField()
+    streetfood_image = models.ImageField()
     streetfood_amt = models.FloatField(default=0)
 
     def __str__(self):
@@ -56,7 +56,7 @@ class StreetFood(models.Model):
 
 class Beverages(models.Model):
     beverages = models.CharField(max_length=50)
-    beverages_image = models.FileField()
+    beverages_image = models.ImageField()
     beverages_amt = models.FloatField(default=0)
 
     def __str__(self):
@@ -65,7 +65,7 @@ class Beverages(models.Model):
 
 class Desserts(models.Model):
     desserts = models.CharField(max_length=50)
-    desserts_image = models.FileField()
+    desserts_image = models.ImageField()
     desserts_amt = models.FloatField(default=0)
 
     def __str__(self):
@@ -74,7 +74,7 @@ class Desserts(models.Model):
 
 class Rice(models.Model):
     rice = models.CharField(max_length=50)
-    rice_image = models.FileField()
+    rice_image = models.ImageField()
     rice_amt = models.FloatField(default=0)
 
     def __str__(self):

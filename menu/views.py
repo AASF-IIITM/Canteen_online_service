@@ -1,6 +1,6 @@
 from django.http import HttpResponse
 from django.views import generic
-from .models import Menu, Vegetable, Thali, Desserts, Beverages, Breads, Snacks, StreetFood, Rice
+from .models import Menu, Vegetable, Plate, Desserts, Beverages, Breads, Snacks, StreetFood, Rice
 
 
 class DetailView(generic.ListView):
@@ -28,13 +28,13 @@ class VegetableView(generic.ListView):
         return Vegetable.objects.all()
 
 
-class ThaliView(generic.ListView):
-    template_name = 'menu/thali.html'
-    model = Thali
-    context_object_name = 'all_thali'
+class PlateView(generic.ListView):
+    template_name = 'menu/Plate.html'
+    model = Plate
+    context_object_name = 'all_plate'
 
     def get_queryset(self):
-        return Thali.objects.all()
+        return Plate.objects.all()
 
 
 class BreadsView(generic.ListView):
